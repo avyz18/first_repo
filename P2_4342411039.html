@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Isian Pendaftaran Calon Siswa Baru</title>
+</head>
+<body>
+
+    <form action="/submit-data" method="post">
+
+        <label for="nisn">1. NISN:
+        <input type="text" id="nisn" name="nama" required><br></label><br>
+
+        <label for="nama">2. Nama Lengkap:
+        <input type="text" id="nama" name="nama" required><br></label><br>
+
+        <div class="form-group"></div>
+            <label for="ttl">3. Tempat / Tanggal Lahir:</label>
+            <input type="text" id="tempat" name="tempat" placeholder="Tempat Lahir" required> / 
+            <input type="date" id="ttl" name="ttl" required>
+        </div>
+
+        <div class="form-group">
+            <label>4. Jenis Kelamin:</label>
+            <div class="radio-group">
+                <input type="radio" id="laki-laki" name="jenis_kelamin" value="Laki-laki" required>
+                <label for="laki-laki">Laki-laki</label>
+                <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan" required style="margin-left: 10px;">
+                <label for="perempuan">Perempuan</label>
+            </div>
+        </div>
+
+        <label for="agama">5. Agama:
+        <select id="agama" name="agama">
+          <option value="islam">Islam</option>
+          <option value="kristen">Protestan</option>
+          <option value="katolik">Katolik</option>
+          <option value="hindu">Hindu</option>
+          <option value="budha">Budha</option>
+          <option value="konghucu">Konghucu</option>
+        </select></label><br>
+
+        <label for="anakke">6. Anak Ke:
+        <input type="text" id="anakke" name="anakke" required><br></label><br>
+
+        <label for="jumlahsaudara">7. Jumlah Saudara:
+        <input type="text" id="jumlahsaudara" name="jumlahsaudara" required><br></label><br>
+                          
+        <input type="submit" value="Proses Pendaftaran">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
